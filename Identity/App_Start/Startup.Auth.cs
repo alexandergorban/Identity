@@ -1,11 +1,11 @@
-﻿using System;
+﻿using Identity.Models;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
-using Identity.Models;
+using System;
 
 namespace Identity
 {
@@ -58,11 +58,11 @@ namespace Identity
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "465596866579-18tg915o93b42h6se84dqqt2e8aba4ke.apps.googleusercontent.com",
+                ClientSecret = "KMSZK2hf9IA1t0oJAsC51zU_"
+            });
         }
     }
 }
